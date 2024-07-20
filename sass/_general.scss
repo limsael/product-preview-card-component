@@ -26,14 +26,18 @@ $white: hsl(0, 0%, 100%);
 body {
   background-color: $cream;
   font-size: 0.875rem;
-  // display: flex;
-  // justify-content: center;
-  // align-items: center;
   min-height: 100svh;
   padding: 2rem 1rem 0;
   font-family: "Montserrat", sans-serif;
 }
 
+footer {
+  margin-block-start: 1rem;
+}
+
+a {
+  text-decoration: none;
+}
 .attribution {
   font-size: 0.68rem;
   text-align: center;

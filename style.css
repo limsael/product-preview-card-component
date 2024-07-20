@@ -23,6 +23,14 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+footer {
+  margin-block-start: 1rem;
+}
+
+a {
+  text-decoration: none;
+}
+
 .attribution {
   font-size: 0.68rem;
   text-align: center;
@@ -38,13 +46,16 @@ body {
   display: flex;
   flex-direction: column;
 }
-.card__img {
+.card__img-mobile {
   width: 100%;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
+.card__img-desktop {
+  display: none;
+}
 .card__body {
-  padding: 1rem 1rem 1.5rem;
+  padding: 1rem 1rem 1rem;
 }
 .card__subtitle {
   text-transform: uppercase;
@@ -72,6 +83,55 @@ body {
   font-size: 0.875rem;
   color: hsl(228, 12%, 48%);
   text-decoration: line-through;
+}
+.card__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: hsl(158, 36%, 37%);
+  padding: 1rem 2rem;
+  gap: 0.625rem;
+  color: hsl(0, 0%, 100%);
+  border-radius: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .card {
+    flex-direction: row;
+    gap: 1rem;
+  }
+  .card__img-mobile {
+    display: none;
+  }
+  .card__img-desktop {
+    display: block;
+    width: 300px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+  .card__body {
+    width: 280px;
+    padding-bottom: 0;
+  }
+  .card__subtitle {
+    margin-block-start: 1.5rem;
+  }
+  .card__title {
+    font-size: 2.2rem;
+  }
+  .card__description {
+    margin-block-end: 2rem;
+  }
+  .card__price {
+    font-size: 2rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
