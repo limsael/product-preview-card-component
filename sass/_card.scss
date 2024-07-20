@@ -1,0 +1,48 @@
+.card {
+  background-color: $white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+
+  &__img {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+
+  &__body {
+    padding: 1rem 1rem 1.5rem;
+  }
+
+  &__subtitle {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: $dark-grayish-blue;
+  }
+
+  &__title {
+    margin-block: 1rem;
+    font-family: "Fruances", serif;
+  }
+
+  &__description {
+    margin-block-end: 1rem;
+    color: $dark-grayish-blue;
+  }
+
+  &__price {
+    margin-block-end: 1rem;
+    font-family: "Fruances", serif;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    font-size: 1.5rem;
+    color: $dark-cyan;
+
+    span {
+      font-size: 0.875rem;
+      color: $dark-grayish-blue;
+      text-decoration: line-through;
+    }
+  }
+}

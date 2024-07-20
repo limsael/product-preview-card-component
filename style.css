@@ -16,7 +16,11 @@
 }
 
 body {
-  font-size: 14px;
+  background-color: hsl(30, 38%, 92%);
+  font-size: 0.875rem;
+  min-height: 100svh;
+  padding: 2rem 1rem 0;
+  font-family: "Montserrat", sans-serif;
 }
 
 .attribution {
@@ -26,6 +30,48 @@ body {
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+.card {
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.card__img {
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.card__body {
+  padding: 1rem 1rem 1.5rem;
+}
+.card__subtitle {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: hsl(228, 12%, 48%);
+}
+.card__title {
+  margin-block: 1rem;
+  font-family: "Fruances", serif;
+}
+.card__description {
+  margin-block-end: 1rem;
+  color: hsl(228, 12%, 48%);
+}
+.card__price {
+  margin-block-end: 1rem;
+  font-family: "Fruances", serif;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  font-size: 1.5rem;
+  color: hsl(158, 36%, 37%);
+}
+.card__price span {
+  font-size: 0.875rem;
+  color: hsl(228, 12%, 48%);
+  text-decoration: line-through;
 }
 
 /*# sourceMappingURL=style.css.map */
